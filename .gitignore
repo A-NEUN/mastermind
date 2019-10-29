@@ -1,0 +1,10 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/azure-pipelines.yml
+/x64/Debug
+/scorehigh.txt
+/scorelow.txt
+/x64/Release
