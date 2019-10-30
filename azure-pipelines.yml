@@ -4,7 +4,7 @@
 # https://docs.microsoft.com/azure/devops/pipelines/apps/windows/dot-net
 
 trigger:
-- release
+- master
 
 pool:
   vmImage: 'windows-latest'
@@ -23,15 +23,15 @@ steps:
   inputs:
     solution: '$(solution)'
     platform: '$(buildPlatform)'
-    configuration: 'Debug'
+    configuration: 'Release'
 
 - task: VSTest@2
   inputs:
     platform: '$(buildPlatform)'
-    configuration: 'Debug'
+    configuration: 'Release'
 
 - task: PublishBuildArtifacts@1
   inputs:
-    PathtoPublish: '$(buildPlatform)\debug'
-    ArtifactName: 'drop'
+    PathtoPublish: '$(buildPlatform)\release'
+    ArtifactName: 'releasedrop'
     publishLocation: 'Container'
