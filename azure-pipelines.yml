@@ -46,6 +46,6 @@ steps:
       dir
       git config --global user.email "16TWindsor@calderlearningtrust.com"
       git config --global user.name "16TWindsor"
-      git add *
+      git add .
       git commit -m "Release Source Code"
       git push
