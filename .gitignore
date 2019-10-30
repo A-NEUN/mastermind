@@ -3,7 +3,7 @@
 ################################################################################
 
 /.vs
-/azure-pipelines.yml
+azure-pipelines.yml
 /x64/Debug
 /scorehigh.txt
 /scorelow.txt
