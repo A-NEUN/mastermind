@@ -35,17 +35,3 @@ steps:
     PathtoPublish: '$(buildPlatform)\Release'
     ArtifactName: 'releasedrop'
     publishLocation: 'Container'
-
-- task: CmdLine@2
-  inputs:
-    script: |
-      dir
-      git clone https://16TWindsor:dfabrA6e@github.com/16TWindsor/mastermind.git
-      copy * mastermind\
-      cd mastermind
-      dir
-      git config --global user.email "16TWindsor@calderlearningtrust.com"
-      git config --global user.name "16TWindsor"
-      git add .
-      git commit -m "Release Source Code"
-      git push
