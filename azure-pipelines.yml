@@ -23,15 +23,15 @@ steps:
   inputs:
     solution: '$(solution)'
     platform: '$(buildPlatform)'
-    configuration: 'Release'
+    configuration: 'Debug'
 
 - task: VSTest@2
   inputs:
     platform: '$(buildPlatform)'
-    configuration: 'Release'
+    configuration: 'Debug'
 
 - task: PublishBuildArtifacts@1
   inputs:
-    PathtoPublish: '$(buildPlatform)\Release'
-    ArtifactName: 'releasedrop'
+    PathtoPublish: '$(buildPlatform)\debug'
+    ArtifactName: 'drop'
     publishLocation: 'Container'
