@@ -1,5 +1,5 @@
 FROM gitpod/workspace-full
-
+sudo apt install clang clang++
 # Install custom tools, runtimes, etc.
 # For example "bastet", a command-line tetris clone:
 # RUN brew install bastet
